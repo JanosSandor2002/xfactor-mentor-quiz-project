@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className='navbaritems'>
         <img src={navlogo} alt='logo' id='navbar-logo' />
         <h1>X faktor mentorok Quiz {new Date().getFullYear()}</h1>
-        <a href='https://my-personal-website-janossandor.netlify.app/'>
+        <a href='https://janossandor2002.github.io/my-website/'>
           <img src={userImage} alt='' />
         </a>
       </div>
