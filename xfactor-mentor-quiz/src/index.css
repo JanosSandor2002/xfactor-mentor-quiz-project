@@ -49,7 +49,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 650px;
   width: 100%;
 }
 .details::after {
@@ -59,7 +59,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(243, 210, 163, 0.02); /* halványító overlay */
+  background-color: rgba(243, 210, 163, 0.005); /* halványító overlay */
 }
 .details h1 {
   text-align: center;
@@ -69,13 +69,15 @@ body {
 .details h3 {
   padding: 10px;
   text-align: center;
+  width: 950px;
+  margin: 0 auto;
 }
 /*Quiz*/
 .quiz {
   background-image: url('./images/quizimage.jpg');
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
   background-position: center;
-  background-size: contain;
   text-align: center;
   background-color: #e6cfc0;
   padding-bottom: 20px;
@@ -175,11 +177,11 @@ body {
   width: 50px;
   object-fit: contain;
 }
-/* Mobil stílusok 600px alatt */
-@media (max-width: 600px) {
+/*laptop*/
+@media (min-width: 1024px) and (max-width: 1279px) {
   /* Navbar */
   .navbar {
-    font-size: 0.5rem;
+    font-size: 1rem;
     height: 100px;
     padding: 10px;
   }
@@ -211,12 +213,213 @@ body {
   }
 
   .details h1 {
+    width: 800px;
+    margin: 0 auto;
     font-size: 1rem;
     padding-top: 30px;
   }
 
   .details h3 {
-    font-size: 0.6rem;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+
+  /* Quiz szekció */
+  .quiz {
+  }
+
+  #submitbutton {
+    font-size: 1rem;
+    height: 60px;
+    width: 200px;
+  }
+
+  .container img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .imgtext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .checkboxes {
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .label {
+    width: 200px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .navicons {
+    width: 200px;
+    height: 60px;
+  }
+
+  .navicons a img {
+    height: 40px;
+    width: 40px;
+  }
+}
+/*laptop*/
+@media (min-width: 600px) and (max-width: 1023px) {
+  /* Navbar */
+  .navbar {
+    font-size: 0.7rem;
+    height: 120px;
+    padding: 10px;
+  }
+
+  .navbaritems {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    height: 100px;
+  }
+
+  .navbar img {
+    height: 60px;
+    width: 60px;
+  }
+
+  #navbar-logo {
+    height: 100px;
+    width: 100px;
+    margin-top: 0;
+  }
+
+  /* Details szekció */
+  .details {
+    height: 400px;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .details h1 {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    padding-top: 30px;
+  }
+
+  .details h3 {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+  }
+
+  /* Quiz szekció */
+  #submitbutton {
+    font-size: 1.5rem;
+    height: 60px;
+    width: 200px;
+  }
+
+  .container img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .imgtext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .checkboxes {
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .label {
+    width: 200px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .navicons {
+    width: 200px;
+    height: 60px;
+  }
+
+  .navicons a img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+  }
+}
+/* Mobil stílusok 600px alatt */
+@media (min-width: 320px) and (max-width: 599px) {
+  /* Navbar */
+  .navbar {
+    font-size: 0.5rem;
+    height: 100px;
+  }
+
+  .navbaritems {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    height: 100px;
+  }
+  .navbaritems h1 {
+    text-align: center;
+  }
+  .navbar img {
+    height: 60px;
+    width: 60px;
+  }
+
+  #navbar-logo {
+    height: 100px;
+    width: 100px;
+    margin-top: 0;
+  }
+
+  /* Details szekció */
+  .details {
+    height: 450px;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .details h1 {
+    width: 290px;
+    font-size: 0.7rem;
+    padding-top: 30px;
+  }
+
+  .details h3 {
+    width: 290px;
+    font-size: 0.5rem;
   }
 
   /* Quiz szekció */
